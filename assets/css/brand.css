@@ -1,0 +1,150 @@
+/* =========================
+   MedAccess Ally – Brand Overrides
+   ========================= */
+
+:root {
+  --brand-primary: #1C1C1C;        /* Main text, headings */
+  --brand-bg: #FFFFFF;             /* Page background */
+  --brand-neutral: #A8A8A8;        /* Secondary text, borders */
+  --brand-accent-calm: #7EC8E3;    /* Links, highlights */
+  --brand-accent-warm: #F28C42;    /* Primary buttons / CTA */
+}
+
+/* -------------------------
+   Base
+------------------------- */
+body {
+  background-color: var(--brand-bg);
+  color: var(--brand-primary);
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: var(--brand-primary);
+  letter-spacing: 0.02em;
+}
+
+/* Paragraphs & subtle text */
+p {
+  color: var(--brand-primary);
+}
+
+small,
+.muted {
+  color: var(--brand-neutral);
+}
+
+/* Links */
+a {
+  color: var(--brand-accent-calm);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand-primary);
+  text-decoration: underline;
+}
+
+/* -------------------------
+   Buttons
+------------------------- */
+.button {
+  background-color: transparent;
+  color: var(--brand-primary);
+  border: 2px solid var(--brand-primary);
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--brand-primary);
+  color: var(--brand-bg);
+}
+
+.button.primary {
+  background-color: var(--brand-accent-warm);
+  color: var(--brand-bg);
+  border: none;
+}
+
+.button.primary:hover {
+  background-color: #d9772f; /* slightly darker warm accent */
+}
+
+/* -------------------------
+   Sections & layout
+------------------------- */
+section.main {
+  background-color: var(--brand-bg);
+  padding: 3rem 1.5rem;
+}
+
+/* CTA Section */
+#cta {
+  background-color: var(--brand-primary);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#cta h2,
+#cta p {
+  color: var(--brand-bg);
+}
+
+/* -------------------------
+   Boxes / Disclaimer
+------------------------- */
+.box {
+  border-left: 4px solid var(--brand-accent-calm);
+  background-color: #f7f9fb;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.box h3 {
+  color: var(--brand-primary);
+  margin-bottom: 0.5rem;
+}
+
+.box p {
+  color: var(--brand-primary);
+  margin: 0.25rem 0;
+}
+
+/* -------------------------
+   Iframe / Google Form
+------------------------- */
+iframe {
+  border-radius: 8px;
+  border: 1px solid var(--brand-neutral);
+}
+
+/* -------------------------
+   Footer
+------------------------- */
+#footer {
+  color: var(--brand-neutral);
+  background-color: var(--brand-bg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+/* -------------------------
+   Optional Enhancements
+------------------------- */
+.button,
+.button.primary {
+  transition: all 0.2s ease-in-out;
+}
+
+section.main p {
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  line-height: 1.3;
+}
